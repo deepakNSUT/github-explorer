@@ -1,16 +1,62 @@
-# React + Vite
+# 🚀 GitHub Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive GitHub profile explorer built with **React**, **Vite**, and the **GitHub REST API**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 Search GitHub users
+- 👤 View profile information
+- 📂 View public repositories
+- ⚡ Responsive design
+- ❌ Error handling for invalid usernames
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- GitHub REST API
+- Zustand (State Management)
+- Framer Motion
 
-## Expanding the ESLint configuration
+## 📂 Project Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+github-explorer/
+│
+├── public/                 # Static assets
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── src/
+│   ├── assets/             # Images & icons
+│   ├── components/         # Reusable UI components
+│   │   ├── Loader.jsx
+│   │   ├── ProfileCard.jsx
+│   │   ├── RepoGrid.jsx
+│   │   └── SearchBar.jsx
+│   │
+│   ├── store/              # Zustand state management
+│   │   └── useGithubStore.js
+│   │
+│   ├── App.jsx             # Root component
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx            # Application entry point
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/your-username/github-explorer.git
+cd github-explorer
+npm install
+npm run dev
+```
+
